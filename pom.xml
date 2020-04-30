@@ -19,7 +19,7 @@
     </properties>
 
     <dependencies>
-        <!--jdbc and postgres dependencies start-->
+        <!--jdbc, h2 and postgres dependencies start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
@@ -30,7 +30,13 @@
             <version>42.2.12</version>
             <scope>runtime</scope>
         </dependency>
-        <!--jdbc and postgres dependencies start-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+            <version>1.4.199</version>
+        </dependency>
+        <!--jdbc, h2 and postgres dependencies start-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
